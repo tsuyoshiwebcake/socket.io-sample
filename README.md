@@ -8,7 +8,7 @@ npm install
 
 ## Usage
 
-## Call from html in client
+### Call from html in client
 
 ```
 node app.js
@@ -17,7 +17,7 @@ node app.js
 ``http://localhost/index.html`` from web browser
 
 
-## Call from node.js in client
+### Call from node.js in client
 
 ```
 node app.js
