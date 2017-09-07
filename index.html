@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Client</title>
+  <!-- Client API を読み込む。自動生成されるので、socket.io.js を作成する必要はない。 -->
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <script>
+    // 通信先のサーバを指定する
+    var socket = io('http://localhost');
+    socket.on('news', function (data) {
+      // サーバから受け取ったデータを出力する
+      console.log(data);
+
+      // サーバへデータ送信
+      // emit を使うとイベント名を指定できる
+      socket.emit('my other event', { my: 'data' });
+    });
+  </script>
+</body>
+</html>
