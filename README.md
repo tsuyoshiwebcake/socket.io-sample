@@ -14,7 +14,7 @@ npm install
 node app.js
 ```
 
-http://localhost/index.html
+``http://localhost/index.html`` from web browser
 
 
 ## Call from node.js in client
